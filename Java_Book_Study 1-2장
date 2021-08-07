@@ -1,0 +1,113 @@
+package java_practice;
+import java.util.*;
+
+public class main {
+
+	public static void main(String[] args) {
+		int a=0,b=1;
+		int k= 10>20 ? a:b;
+		int octNum = 010;
+		int hexNum = 0x10;
+		int binNum = 0b10;
+		float PI = 3.14f;
+		System.out.println(octNum);
+		System.out.println(hexNum);
+		System.out.println(binNum);
+		System.out.println(PI);
+		System.out.println(k);
+		System.out.printf("[%5d]%n",k);
+		System.out.printf("[%-5d]%n",k);
+		System.out.printf("[%05d]%n",k);
+		System.out.println('\'');
+		System.out.println("abc\t123\b456");
+		System.out.println('\n');
+		System.out.println("\"Hello\"");
+		System.out.println("c:\\");
+		
+		short sMin=-32768;
+		short sMax=32767;
+		char cMin= 0;
+		char cMax = 65535;
+		
+		System.out.println(sMin);
+		System.out.println((short)(sMin-1));
+		System.out.println(sMax);
+		System.out.println((short)(sMax+1));
+		System.out.println((int)cMin);
+		System.out.println((int)--cMin);
+		System.out.println((int)cMax);
+		System.out.println((int)++cMax);
+		
+		float f = 9.12345678901234567890f;
+		
+		System.out.printf("%f%n",f);// 소수점 6째 자리수 까지
+		System.out.printf("%24.20f%n",f);//소수점 24자리수 중 20자리수 까지 출력
+		
+		float f2 = 9.1234567f;
+		int i = Float.floatToIntBits(f2);
+		System.out.printf("%f%n",f2);
+		System.out.printf("%X%n", i);
+		
+		double d= 85.4;
+		int score = (int)d;
+		
+		System.out.println("score ="+score);
+		System.out.println("d = "+d);
+		
+		int i1 =10;
+		byte b1 = (byte)i;
+		System.out.printf("[int ->byte} i = %d -> b=%d%n",i1,b1);
+		
+		int i2 =300;
+		b=(byte)i;
+		System.out.printf("[int ->byte} i = %d -> b=%d%n",i2,b);
+		
+		b=10;
+		i=(int)b;
+		System.out.printf("[byte -> int} b = %d -> i=%d%n",b,i);
+		
+		b=-2;
+		i=(int)b;
+		System.out.printf("[byte -> int} b = %d -> i=%d%n", b,i);
+		
+		System.out.println("i="+Integer.toBinaryString(i));
+		
+		float f3 = 9.1234567f;
+		double d3 = 9.1234567d;
+		double d4 = (double)f3;
+		
+		System.out.printf("f3=%20.18f\n",f3);
+		System.out.printf("d3=%20.18f\n",d3);
+		System.out.printf("d4=%20.18f\n",d4);
+		
+		int i5 = 91234567;
+		float f5 = (float)i5;
+		int i6 = (int)f5;
+		
+		double d5= (double)i5;
+		int i7 = (int)d5;
+		
+		float f6= 1.666f;
+		int i8=(int)f6;
+		
+		System.out.printf("i=%d\n", i5);
+		System.out.printf("f=%f i2=%d\n",f5, i6);
+		System.out.printf("d=%f i3=%d\n",d5, i7);
+		System.out.printf("(int)%f=%d\n",f6, i8);
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+		System.out.println("문자열을 입력하시오.");
+		Scanner scanner = new Scanner(System.in);
+		String jm= scanner.nextLine();
+		System.out.println(jm);
+		int num=Integer.parseInt(jm);
+	}
+
+}
